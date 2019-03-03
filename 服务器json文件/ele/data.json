@@ -1,0 +1,20 @@
+﻿[{
+    "name":"张飞牛肉",
+     "imageURL":"shop1.jpg",
+    "score":"4.8",
+    "sale":"2446",
+    "sprice":"0",   
+    "dprice":"2",  
+    "distance":"420",
+    "time":"36"
+},
+{
+    "name":"东湖黑哥酸菜鱼",
+     "imageURL":"shop2.jpg",
+    "score":"4.0",
+    "sale":"48",
+    "sprice":"0",   
+    "dprice":"4",  
+    "distance":"398",
+    "time":"36"
+}]

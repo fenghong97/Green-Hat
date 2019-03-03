@@ -1,0 +1,7 @@
+[
+{ "name":"张飞牛肉","imageURL":"shop1.jpg","score":"4.8","sale":"2446","sprice":"0","dprice":"2","distance":"420","time":"36" },
+{ "name":"东湖黑哥酸菜鱼","imageURL":"shop2.jpg","score":"4.0","sale":"48","sprice":"0","dprice":"4","distance":"398","time":"36" },
+{ "name":"第一家大鸡排","imageURL":"shop3.jpg","score":"3.8","sale":"25","sprice":"0","dprice":"5","distance":"1000","time":"50" },
+{ "name":"许记粥铺","imageURL":"shop4.jpg","score":"4.6","sale":"2828","sprice":"0","dprice":"2","distance":"1600","time":"44" },
+{ "name":"小胖哥烧烤","imageURL":"shop5.jpg","score":"4.6","sale":"1281","sprice":"15","dprice":"1","distance":"1400","time":"44" }
+]

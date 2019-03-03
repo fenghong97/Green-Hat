@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hd.ele.Widget.EleSearchActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:background="#ffffff"
+        android:id="@+id/frame_bg"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_gravity="center|left"
+            android:src="@drawable/arrow_right_black"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_hint"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#666666"-->
+            <!--android:text="星选好店 为健康加分" />-->
+
+        <TextView
+            android:layout_marginRight="3dp"
+            android:id="@+id/tv_search"
+            android:textColor="#000000"
+            android:layout_gravity="center|right"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_search_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/ele_search_bg"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:text="星选好店 为健康加分" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/frame_content_bg"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/search"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ele</string>
+    <string name="star_filled">\u2605</string>
+    <string name="star">\u2606</string>
+    <string name="scroll_behavior">@string/appbar_scrolling_view_behavior</string>
+    <string name="detail_header_behavior">com.hd.ele.Detail.DetailHeaderBehavior</string>
+    <string name="addincar">加入购物车</string>
+</resources>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.hd.ele"
+        minSdkVersion 22
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+        androidTest.setRoot('tests')
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name: 'viewpagerindicator', ext: 'aar')
+    implementation name: 'SMSSDK-2.1.1', ext: 'aar'
+    implementation name: 'SMSSDKGUI-2.1.1', ext: 'aar'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:1.3.1'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    implementation 'com.facebook.fresco:fresco:1.2.0'
+    implementation 'jp.wasabeef:fresco-processors:2.1.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.25'
+    implementation 'com.github.florent37:viewanimator:1.0.5'
+    implementation files('libs/baidumapapi_map_v4_0_0.jar')
+    implementation files('libs/baidumapapi_search_v4_0_0.jar')
+    implementation files('libs/baidumapapi_base_v4_0_0.jar')
+    implementation files('libs/locSDK_6.13.jar')
+    implementation files('libs/jtds-1.2.7.jar')
+}

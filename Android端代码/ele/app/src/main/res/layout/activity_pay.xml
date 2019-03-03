@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hd.ele.PayActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="您的订单已被接收，请到订单页查看"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <!--现在不需要这个页面了，因为点击提交不会跳转到此页面，而是直接跳转到订单页面-->
+
+</android.support.constraint.ConstraintLayout>

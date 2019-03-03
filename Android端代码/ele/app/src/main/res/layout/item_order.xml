@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/food_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_bg"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+
+        <ImageView
+            android:id="@+id/tv_Image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shop1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tv_Image"
+            android:maxLines="2"
+            android:text="张飞红汤牛肉米线"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/order_part"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:src="@drawable/gray_arrow" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/order_part"-->
+        <!--android:layout_marginLeft="200dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="   >"-->
+        <!--android:textSize="20dp"/>-->
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:maxLines="1"
+            android:text="2018-12-21 13:43"
+            android:textColor="@color/lightgray" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_sale"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@id/tv_name"-->
+        <!--android:layout_below="@id/tv_summary"/>-->
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_time"
+            android:text="数量：2件"
+            android:textColor="#666666"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginLeft="150dp"
+            android:text="￥48"
+            android:textColor="#666666"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/order_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="250dp"
+            android:background="#ffffff"
+            android:text="删除订单"
+            android:clickable="true"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <!--<com.hd.ele.View.AddWidget-->
+        <!--android:id="@+id/addwidget"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignTop="@id/tv_price"-->
+        <!--app:sub_anim="true"/>-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="@color/divider_gray"/>
+</LinearLayout>
